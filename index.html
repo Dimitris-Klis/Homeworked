@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Homworked</title>
+    </head>
+    <body>
+        <h1>Homeworked</h1>
+        <h3>(by Jimm560)</h3>
+        <label for="HomeworkInput">Enter Homework:</label>
+        <input type="text" id="HomeworkInput"><br>
+
+        <label for="IsHomework">Is Homework:</label>
+        <input type="checkbox" id="IsHomework" checked><br><br>
+
+        Language:<br>
+        <label for="greekLang">Greek</label>
+        <input type="radio" name="Lang" id="greekLang" class="radio" onclick="RefreshHTML()" checked>
+        <label for="greek">English</label>
+        <input type="radio" name="Lang" id="englishLang" class="radio" onclick="RefreshHTML()"><br><br>
+        <button onclick="addHomework()">Add Homework</button><br>
+        <button onclick="clearHomework()">Clear Homework</button>
+        <button onclick="CopyText()">Copy</button>
+        <br><br><br>
+        <h2>Homework Area</h2>
+        <div id="HomeworkArea">
+            <center>Μαθήματα:</center>
+            <ol class="HomeworkList"></ol>
+
+        </div>
+        <script src="main.js"></script>
+    </body>
+
+</html>
